@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="db569f4f-8ea2-49f6-b0d8-d8379de8911e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from tb_pengembalian]]>
+	</queryString>
+	<field name="id_pengembalian" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_transaksi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_penyewa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_mobil" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_rental" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_kembali" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lama" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga_rental" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total_bayar" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="802" height="72" backcolor="#006699" uuid="e12c433e-e741-44f0-a655-e8573ba0baa7"/>
+				<staticText>
+					<reportElement x="5" y="3" width="512" height="43" forecolor="#FFFFFF" uuid="41191664-844a-43ce-aa13-b2e964f69461"/>
+					<textElement>
+						<font fontName="Times New Roman" size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Laporan Transaksi Pengembalian]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="554" y="45" width="241" height="20" forecolor="#FFFFFF" uuid="243462b9-c0e3-4f92-8f80-6d48ad9463e1"/>
+					<textElement textAlignment="Right">
+						<font fontName="Times New Roman" size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Sistem Informasi Penyewaan Mobil]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="0" y="20" width="802" height="1" forecolor="#666666" uuid="cf73fc7d-27a6-4fde-9586-b1d994f5dd8f"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#000000" backcolor="#E6E6E6" uuid="12156a47-76d7-4dc8-a0e9-e3354ce6519b"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[id_pengembalian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="100" y="0" width="75" height="20" forecolor="#000000" backcolor="#E6E6E6" uuid="def66d8b-1795-49e5-bd1a-7df8d0f06f44"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[id_transaksi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="175" y="0" width="72" height="20" forecolor="#000000" backcolor="#E6E6E6" uuid="4811481b-ed0a-4f8a-bcb2-71eb27587b57"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[id_penyewa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="245" y="0" width="60" height="20" forecolor="#000000" backcolor="#E6E6E6" uuid="be670ab1-9560-43ee-8c0e-8dbd7eec4c76"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[id_mobil]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="305" y="0" width="94" height="20" forecolor="#000000" backcolor="#E6E6E6" uuid="85163beb-1faf-4404-8208-4f2adb159a49"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[tgl_rental]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="399" y="0" width="90" height="20" forecolor="#000000" backcolor="#E6E6E6" uuid="777a3522-4538-4d7b-8ae9-665c3436bd63"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[tgl_kembali]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="489" y="0" width="50" height="20" forecolor="#000000" backcolor="#E6E6E6" uuid="2ccb09bb-ad0f-4680-b521-097f137fabd5"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[lama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="539" y="0" width="92" height="20" forecolor="#000000" backcolor="#E6E6E6" uuid="43aacab9-6465-4199-9e14-1d29d73aa9ae"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[harga_rental]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="631" y="0" width="100" height="20" forecolor="#000000" backcolor="#E6E6E6" uuid="6133388c-584c-4b0d-ace5-2d6c9b3c9840"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[total_bayar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="731" y="0" width="71" height="20" forecolor="#000000" backcolor="#E6E6E6" uuid="512a0df0-8771-4be0-b221-0c1c3a495965"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[status]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="802" height="1" uuid="f59e5755-d3cc-46b9-8482-8034c8d4c478"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="100" height="20" uuid="cb049ff9-db53-4029-be2d-d0ce551e5746"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_pengembalian}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="100" y="0" width="75" height="20" uuid="9856675d-8f26-4976-9111-f5322353e9ae"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_transaksi}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="175" y="0" width="72" height="20" uuid="e31bff78-1809-43be-b708-1b3c4e4c8a34"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_penyewa}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="247" y="0" width="60" height="20" uuid="5d94fc23-3793-49ea-a88b-f547220f3956"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_mobil}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="305" y="0" width="94" height="20" uuid="50bd386a-0855-4b88-b92d-5ed8e6e992ad"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tgl_rental}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="399" y="0" width="90" height="20" uuid="469fa8df-29e6-4ded-a84e-ae7f2e6b3fc9"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tgl_kembali}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="489" y="0" width="50" height="20" uuid="73b8fc98-f652-42ea-9e36-f7b6a55b8ca0"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lama}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="539" y="0" width="92" height="20" uuid="6092d1e4-4bb3-4b98-ab39-e8c98342f5bf"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{harga_rental}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="631" y="0" width="100" height="20" uuid="2335ab4e-e7d8-4967-81ab-949e303b8255"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{total_bayar}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="731" y="0" width="71" height="20" uuid="770218b0-5019-4fa3-b3e9-272d71a1f29d"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="762" height="13" backcolor="#E6E6E6" uuid="7ae3c8e3-4f19-41cc-bdb8-f33703619f06"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="762" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="834da41e-c8ae-4610-89c9-3b5ea9ad7894"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="b3a779dc-91d2-4301-9305-2d843c3bacb5"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

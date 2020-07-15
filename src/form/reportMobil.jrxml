@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="63a6d01b-cb6f-45f0-bb2f-4d45a0ee0728">
+	<property name="ireport.zoom" value="2.5937424601000023"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="54"/>
+	<queryString language="SQL">
+		<![CDATA[select * from tb_mobil]]>
+	</queryString>
+	<field name="id_mobil" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_mobil" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="merk_mobil" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_plat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga_rental" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="72" backcolor="#006699" uuid="2184ec74-0fb1-415e-bc32-98d454f87050"/>
+				<staticText>
+					<reportElement x="4" y="4" width="234" height="43" forecolor="#FFFFFF" uuid="8ea2109d-4c12-4e9f-9403-50dd904fce7c"/>
+					<textElement>
+						<font fontName="Times New Roman" size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Data Mobil]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="332" y="47" width="220" height="20" forecolor="#FFFFFF" uuid="75e36343-9954-46fd-a0f3-818e9192b510"/>
+					<textElement textAlignment="Right">
+						<font fontName="Times New Roman" size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Sistem Informasi Persewaan Mobil]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="0" y="20" width="555" height="1" forecolor="#666666" uuid="b1d1d998-ae9f-4925-95fb-d4fefac4a287"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="73" height="20" forecolor="#333300" backcolor="#E6E6E6" uuid="a6ae46b3-e833-417f-9ea5-4d2dc6af3adc"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[id_mobil]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="73" y="0" width="111" height="20" forecolor="#333300" backcolor="#E6E6E6" uuid="38effbfc-5daa-4c2d-b060-542cebdc0195"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[nama_mobil]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="184" y="0" width="92" height="20" forecolor="#333300" backcolor="#E6E6E6" uuid="edd5aef6-b459-4516-b147-76cd0505ea99"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[merk_mobil]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="276" y="0" width="92" height="20" forecolor="#333300" backcolor="#E6E6E6" uuid="d530827c-b622-46f7-85d9-d353d8fcfdd0"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[no_plat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="368" y="0" width="92" height="20" forecolor="#333300" backcolor="#E6E6E6" uuid="4f7f4451-2de3-4d6b-b58e-1811572841d6"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[harga_rental]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="460" y="0" width="92" height="20" forecolor="#333300" backcolor="#E6E6E6" uuid="e1abe841-ecd1-40a5-a8e7-bf0b49cbb480"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[status]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="2e1cf2ef-ac57-4843-83f2-5a95b1d9f01c"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="73" height="20" uuid="f67feec9-0e37-4284-88de-ad1a9369ee49"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_mobil}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="73" y="0" width="111" height="20" uuid="23a89971-f83f-40bb-9432-3c0d48425da5"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_mobil}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="184" y="0" width="92" height="20" uuid="75266e88-1143-455b-a747-1a2d991dff0c"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{merk_mobil}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="276" y="0" width="92" height="20" uuid="e5125cd2-c610-4cd3-8193-1a0224bafd33"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{no_plat}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="368" y="0" width="92" height="20" uuid="78355e7f-9cfe-4f47-ba3c-d9dd2785461e"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{harga_rental}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="460" y="0" width="92" height="20" uuid="822e1f36-9395-4bd3-9a8e-f26d78b1f107"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="5ba4470c-4c21-43a7-99b1-3b603d10c836"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="a3d6ed9c-8b5e-47f1-8496-85c8c984e566"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="6143533e-ae20-496e-a9e1-4c63f3949977"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
